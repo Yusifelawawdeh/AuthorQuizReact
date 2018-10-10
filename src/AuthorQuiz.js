@@ -1,18 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-
-function Identity() {
-  return(
-    <div>
-      <form>
-        <input type="text" name="firstName" value="" placeholder="First Name"/>
-        <input type="text" name="lastName" value="" placeholder="Last Name" />
-      </form>
-    </div>
-  );
-}
 
 function Hero() {
   return (
@@ -50,6 +40,7 @@ function Turn({ author, books, highlight, onAnswerSelected }) {
     </div>
   );
 }
+
 Turn.prototypes = {
   author: PropTypes.shape({
     name: PropTypes.string.isRequired,
@@ -101,7 +92,9 @@ function AuthorQuiz({ turnData, highlight, onAnswerSelected }) {
         onAnswerSelected={onAnswerSelected}
       />
       <Continue />
-      <Identity/>
+      <p>
+        <Link to="/add">Add an Author</Link>
+      </p>
       <Footer />
     </div>
   );
