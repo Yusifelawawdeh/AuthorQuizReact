@@ -1,0 +1,12 @@
+.AddAuthor{
+    width: 80%;
+    margin: 50px 10%;
+}
+
+.AddAuthor__input{
+    margin-bottom: 20px;
+}
+
+.AddAuthor__input > label {
+    display: block;
+}
