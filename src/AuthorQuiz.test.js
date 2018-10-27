@@ -5,6 +5,7 @@ import Adapter from "enzyme-adapter-react-16";
 import Enzyme, { mount, shallow, render } from "enzyme";
 Enzyme.configure({ adapter: new Adapter() });
 
+
 const state = {
   turnData: {
     books: ["the shining", "It", "hamlet", "harry potter", "heart of darkness"],
@@ -17,6 +18,7 @@ const state = {
   },
   highlight: "none"
 };
+
 
 describe("Author Quiz", () => {
   it("renders without crashing", () => {

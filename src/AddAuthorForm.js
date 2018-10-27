@@ -1,4 +1,4 @@
-import React from "react";
+import { React } from "react";
 import { Link } from "react-router-dom";
 import "./AddAuthorForm.css";
 
@@ -17,10 +17,10 @@ class AuthorForm extends React.Component {
   }
 
   handleAddBook(event) {
-      this.setState({
-          books: this.state.books.concat([this.state.bookTemp]),
-          bookTemp: ""
-      });
+    this.setState({
+      books: this.state.books.concat([this.state.bookTemp]),
+      bookTemp: ""
+    });
   }
 
   handleSubmit(event) {
@@ -83,12 +83,20 @@ class AuthorForm extends React.Component {
   }
 }
 
+
+/**
+ *
+ *
+ * @param {*} { match, onAddAuthor }
+ * @returns a div wrapped component author form
+ */
 function AddAuthorForm({ match, onAddAuthor }) {
   return (
     <div className="AddAuthor">
       <h1>Add Author</h1>
       <AuthorForm onAddAuthor={onAddAuthor} />
       <p>
+        <h1> derp </h1>
         <Link to="/">Return to Author Quiz </Link>
       </p>
     </div>

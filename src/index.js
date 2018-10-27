@@ -51,6 +51,13 @@ const authors = [
   }
 ];
 
+
+/**
+ *
+ *
+ * @param {*} authors
+ * @returns turn data 
+ */
 function getTurnData(authors) {
   const allBooks = authors.reduce(function(p, c, i) {
     return p.concat(c.books);
