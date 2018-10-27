@@ -1,4 +1,4 @@
-import { React } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./AddAuthorForm.css";
 
@@ -83,7 +83,6 @@ class AuthorForm extends React.Component {
   }
 }
 
-
 /**
  *
  *
@@ -96,7 +95,6 @@ function AddAuthorForm({ match, onAddAuthor }) {
       <h1>Add Author</h1>
       <AuthorForm onAddAuthor={onAddAuthor} />
       <p>
-        <h1> derp </h1>
         <Link to="/">Return to Author Quiz </Link>
       </p>
     </div>
