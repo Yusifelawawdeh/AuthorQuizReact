@@ -83,6 +83,8 @@ class AuthorForm extends React.Component {
   }
 }
 
+// TODO: reset the git gist  settings sync for work
+
 /**
  *
  *
